@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Möbelaffär</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Möbelaffär</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Hem</a></li>
+                <li><a href="#products">Produkter</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Välkommen till vår möbelaffär!</h2>
+            <p>Här hittar du de senaste trenderna och klassiska möbler för ditt hem.</p>
+        </section>
+        <section id="products">
+            <h2>Våra produkter</h2>
+            <div class="product">
+                <img src="sofa.jpg" alt="Soffa">
+                <h3>Komfortabel Soffa</h3>
+                <p>En stilren och bekväm soffa för alla rum.</p>
+                <button onclick="showDetails('sofa')">Visa mer</button>
+            </div>
+            <div class="product">
+                <img src="table.jpg" alt="Matbord">
+                <h3>Elegant Matbord</h3>
+                <p>Perfekt för middagar med familj och vänner.</p>
+                <button onclick="showDetails('table')">Visa mer</button>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <form id="contactForm">
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Meddelande:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Skicka</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Möbelaffär. Alla rättigheter reserverade.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
